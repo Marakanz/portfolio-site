@@ -1,13 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.navbar {
+  @apply md:flex px-12 py-5 text-white z-50 bg-blue-900 items-center justify-between;
+  background-color: #112240;
+  font-family: "Nunito Sans", sans-serif;
+}
+.about {
+  @apply my-5 flex items-center justify-center;
+  height: 600px;
+}
+
+.intro {
+  height: 700px;
+  background-color: #112240;
+  @apply text-white flex items-center justify-center;
+}
+
+.logo-icon {
+  @apply w-1/3 mb-2 border-b flex justify-center;
+}
+
+.nav-item {
+  @apply hover:text-teal-200 font-bold cursor-pointer transition-all duration-200 hover:text-3xl;
+}
+.sticky {
+  @apply fixed top-0 shadow-xl w-full transition-all ease-in-out duration-500;
+}
+.projects {
+  @apply bg-slate-200 flex flex-col text-white items-center justify-center py-20 px-5;
+  height: auto;
+  background-color: #112240;
+}
+.project-item {
+  @apply h-80 w-full shadow-md md:shadow-lg p-5 flex flex-col justify-center items-center hover:shadow-teal-400 hover:text-teal-300 transition-all ease-in-out duration-300;
+  @apply hover:-translate-y-5 hover:z-40;
+  background-color: #11264a;
+}
+.contact { 
+  @apply text-white  flex py-12  flex-col justify-center items-center;
+  background-color: #112240;
+  height: auto;
+}
+.contact-box {
+  background-color: #11264a;
+  height: auto;
+}
+.button {
+  @apply p-3 w-3/5 my-4 rounded-xl border-none hover:bg-teal-500 bg-teal-300 transition-all duration-500 ease-in-out;
+}
+
+.experience {
+  @apply flex flex-col items-center border-none py-7 text-white;
+  background-color: #112240;
+}
+
+@media only screen and (max-width: 400px) {
+  .about {
+    height: auto;
+  }
+  .project-item {
+  }
 }
