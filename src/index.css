@@ -22,12 +22,15 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 .navbar {
-  @apply md:flex px-12 py-5 text-white z-50 bg-blue-900 items-center justify-between;
+  @apply md:flex px-12 py-5 text-gray-300 z-50 bg-blue-900 items-center justify-between;
   background-color: #112240;
   font-family: "Nunito Sans", sans-serif;
 }
+.home {
+  background-color: #112240;
+}
 .about {
-  @apply my-5 flex items-center justify-center;
+  @apply my-5 flex items-center bg-white justify-center;
   height: 600px;
 }
 
@@ -42,7 +45,10 @@ body {
 }
 
 .nav-item {
-  @apply hover:text-teal-200 font-bold cursor-pointer transition-all duration-200 hover:text-3xl;
+  @apply text-teal-200 hover:text-teal-400 font-bold cursor-pointer transition-all duration-200 hover:text-3xl;
+}
+.nav-menu{
+  @apply w-1/2 text-xl md:flex md:text-2xl items-center md:justify-between;
 }
 .sticky {
   @apply fixed top-0 shadow-xl w-full transition-all ease-in-out duration-500;
@@ -52,9 +58,11 @@ body {
   height: auto;
   background-color: #112240;
 }
-.project-item {
-  @apply h-80 w-full shadow-md md:shadow-lg p-5 flex flex-col justify-center items-center hover:shadow-teal-400 hover:text-teal-300 transition-all ease-in-out duration-300;
-  @apply hover:-translate-y-5 hover:z-40;
+.project-item-body {
+  @apply w-full px-5 p-5 flex flex-col justify-center items-center;
+}
+.project-item{
+  @apply hover:-translate-y-5 hover:z-40 shadow-md md:shadow-lg hover:shadow-teal-400 hover:text-teal-300 transition-all ease-in-out duration-300;
   background-color: #11264a;
 }
 .contact { 
@@ -75,10 +83,25 @@ body {
   background-color: #112240;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .about {
     height: auto;
   }
-  .project-item {
+  .nav-menu {
+    width: 50%;
+    top: 0vh;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #11264a;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 20;
+    @apply transition-all ease-in-out duration-500;
+  }
+  .closed {
+    transform: translateX(100%);
   }
 }
