@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
-    const [email, setEmail ] = useState("");
-    const [ message, setMessage ] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   return (
     <div className="contact" id="contact">
       <h1 className="text-5xl font-bold drop-shadow-lg my-4 text-teal-300">
@@ -17,10 +18,29 @@ const Contact = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
           <label className="text-lg font-bold mr-3">Message</label>
-          <input onChange={(e) => setMessage(e.target.value)} className="w-full text-black h-36 outline-none p-4 my-2 rounded-xl" type={"text"} />
+          <input
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full text-black h-36 outline-none p-4 my-2 rounded-xl"
+            type={"text"}
+          />
 
           <button className="button">Send Message</button>
         </form>
+      </div>
+      <div className="my-8 flex flex-col items-center justify-center">
+        <div className="flex justify-center items-center mb-4">
+          <a href="https://github.com/Marakanz">
+            <FaGithub className="text-2xl text-gray-300 hover:text-teal-300 hover:text-3xl mx-3" />
+          </a>
+          <a href="https://www.linkedin.com/in/juwon-akande-0708a7172">
+            <FaLinkedin className="text-2xl text-gray-300 hover:text-teal-300 hover:text-3xl mx-3" />
+          </a>
+          <a>
+            <FaTwitter className="text-2xl text-gray-300 hover:text-teal-300 hover:text-3xl mx-3" />
+          </a>
+        </div>
+        <p className="tracking-widest border-b border-gray-300">juwonakande07@gmail.com</p>
+
       </div>
     </div>
   );
