@@ -86,9 +86,10 @@ body {
 @media only screen and (max-width: 768px) {
   .about {
     height: auto;
+    @apply py-11;
   }
   .nav-menu {
-    width: 50%;
+    width: 70%;
     top: 0vh;
     height: 100vh;
     position: fixed;

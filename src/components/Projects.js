@@ -7,10 +7,10 @@ const Projects = () => {
       <h1 className="text-3xl md:text-5xl text-center font-bold mb-8 text-teal-300 drop-shadow-lg">
         My Projects
       </h1>
-      <div className="grid w-4/5 md:grid-cols-2 gap-5">
+      <div className="grid w-11/12 md:w-4/5 md:grid-cols-2 gap-5">
         {projects.map((item) => (
           <div className="project-item">
-            <img src={item.img} className="w-full h-64 object-cover object-left-top" alt="projectItem"/>
+            <img src={item.img} className="w-full h-48 md:h-64 object-cover object-left-top" alt="projectItem"/>
             <div className="project-item-body">
               <a
                 target={"_blank"}

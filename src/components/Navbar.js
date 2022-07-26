@@ -29,46 +29,26 @@ const Navbar = () => {
             <IoClose className="text-5xl font-bold md:hidden" />
           </button>
         </div>
-        <li>
+        <li onClick={() => setOpen(!open)}>
           <a className="nav-item" href="#">
             Home
           </a>
         </li>
-        <li>
+        <li onClick={() => setOpen(!open)}>
           <a className="nav-item" href="#about">
             About
           </a>
         </li>
-        <li>
+        <li onClick={() => setOpen(!open)}>
           <a className="nav-item" href="#projects">
             Projects
           </a>
         </li>
-        <li>
+        <li onClick={() => setOpen(!open)}>
           <a className="nav-item" href="#contact">
             Contact
           </a>
         </li> 
-        {/* <div>
-          <a className="nav-item" href="">
-            Home
-          </a>
-        </div>
-        <div>
-          <a className="nav-item" href="#about">
-            About
-          </a>
-        </div>
-        <div>
-          <a className="nav-item" href="#projects">
-            Projects
-          </a>
-        </div>
-        <div>
-          <a className="nav-item" href="#contact">
-            Contact
-          </a>
-        </div> */}
       </ul>
     </nav>
   );

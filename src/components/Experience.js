@@ -20,9 +20,7 @@ const Experience = () => {
               <BsCaretRightFill className="font-2xl text-teal-300" />
             </div>
             <p className="w-5/6 text-lg">
-              Work with a variety of different languages, platforms, frameworks,
-              and content management systems such as JavaScript, TypeScript,
-              Gatsby, React, Craft, WordPress, Prismic, and Netlify
+              Worked with a cross functional team in an agile environment the product development, and the analysis and diagnosing of production issues.
             </p>
           </div>
 
