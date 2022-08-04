@@ -16,7 +16,7 @@ const Projects = () => {
                 target={"_blank"}
                 rel="noreferrer"
                 href={`https://${item.url}`}
-                className="text-2xl my-3 font-bold text-white hover:text-teal-300"
+                className="text-2xl my-3 font-bold text-white hover:text-teal-300 hover:"
               >
                 {item.name}
               </a>
