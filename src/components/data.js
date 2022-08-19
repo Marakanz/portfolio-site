@@ -1,6 +1,7 @@
 import MMS from "../images/mmsimage.png";
 import Easybank from "../images/easybank.png";
 import Clothing from "../images/clothing-wave.png";
+import Cocktails from "../images/cocktails.png";
 export const projects = [
     {
         name: "MM's Catering",
@@ -17,14 +18,15 @@ export const projects = [
         ]
     },
     {
-        name: "Easy Bank landing page",
-        img: Easybank,
-        url: "easy-bank-landing2-page.vercel.app/",
-        desc: "A landing page design for a commercial bank.",
+        name: "Cocktails Hub ",
+        url: "cocktails-hub.netlify.app",
+        img: Cocktails,
+        desc: "A database for varieties of wines and cocktails",
         tools: [
             "HTML",
-            "Bootstrap",
-            "jQuery"
+            "Node",
+            "Tailwind",
+            "React"
         ]
     },
     {
@@ -39,6 +41,17 @@ export const projects = [
             "Node",
             "Tailwind",
             "React"
+        ]
+    },
+    {
+        name: "Easy Bank landing page",
+        img: Easybank,
+        url: "easy-bank-landing2-page.vercel.app/",
+        desc: "A landing page design for a commercial bank.",
+        tools: [
+            "HTML",
+            "Bootstrap",
+            "jQuery"
         ]
     },
     
