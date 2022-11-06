@@ -1,8 +1,20 @@
 import MMS from "../images/mmsimage.png";
-import Easybank from "../images/easybank.png";
-import Clothing from "../images/clothing-wave.png";
+import JOBS from "../images/jobstodo.png";
 import Cocktails from "../images/cocktails.png";
 export const projects = [
+    {
+        name: "Jobs-to-do",
+        url: "https://jobstodo.netlify.app",
+        img: JOBS,
+        desc: "A job application monitoring portal where users can keep track of their past and ongoing job applications",
+        tools: [
+        
+            "Node",
+            "TailwindCSS",
+            "React",
+            "Redux"
+        ]
+    },
     {
         name: "MM's Catering",
         url: "www.mmscatering.com",
@@ -29,30 +41,6 @@ export const projects = [
             "React"
         ]
     },
-    {
-        name: "Clothing Wave",
-        url: "clothing-wave.netlify.app",
-        img: Clothing,
-        desc: "An online clothing store for men's fashion",
-        tools: [
-            "Heroku",
-            "Express",
-            "MongoDB",
-            "Node",
-            "Tailwind",
-            "React"
-        ]
-    },
-    {
-        name: "Easy Bank landing page",
-        img: Easybank,
-        url: "easy-bank-landing2-page.vercel.app/",
-        desc: "A landing page design for a commercial bank.",
-        tools: [
-            "HTML",
-            "Bootstrap",
-            "jQuery"
-        ]
-    },
+    
     
 ]
