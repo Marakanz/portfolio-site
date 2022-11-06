@@ -29,9 +29,7 @@ const Experience = () => {
                   Contributed to the design and development of the client-side
                   of the web application using Tailwind CSS, React.js and Redux
                   and assisted in the implementation and development of the chat
-                  feature using Socket.io.  ● Assisted in identifying and fixing
-                  production issues throughout the full Software Development
-                  Life Cycle (SDLC) of the product.
+                  feature using Socket.io.
                 </p>
               </div>
 
