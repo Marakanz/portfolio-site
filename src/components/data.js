@@ -4,7 +4,7 @@ import Cocktails from "../images/cocktails.png";
 export const projects = [
     {
         name: "Jobs-to-do",
-        url: "https://jobstodo.netlify.app",
+        url: "jobstodo.netlify.app",
         img: JOBS,
         desc: "A job application monitoring portal where users can keep track of their past and ongoing job applications",
         tools: [
