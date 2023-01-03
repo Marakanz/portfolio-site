@@ -1,11 +1,11 @@
 import MMS from "../images/mmsimage.png";
 import JOBS from "../images/jobstodo.png";
-import Cocktails from "../images/cocktails.png";
+import Stay from "../images/staycation.png";
 export const projects = [
     {
         name: "Staycation",
-        url: "staycation.netlify.app",
-        img: JOBS,
+        url: "stay-cation.netlify.app",
+        img: Stay,
         desc: "An hotel or private rental booking web application",
         tools: [
         
