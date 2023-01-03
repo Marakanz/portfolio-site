@@ -3,6 +3,22 @@ import JOBS from "../images/jobstodo.png";
 import Cocktails from "../images/cocktails.png";
 export const projects = [
     {
+        name: "Staycation",
+        url: "staycation.netlify.app",
+        img: JOBS,
+        desc: "An hotel or private rental booking web application",
+        tools: [
+        
+            "React",
+            "TailwindCSS",
+            "GraphQL",
+            "Apollo",
+            "Node.js",
+            "MongoDB",
+            "AWS"
+        ]
+    },
+    {
         name: "Jobs-to-do",
         url: "jobstodo.netlify.app",
         img: JOBS,
@@ -26,18 +42,6 @@ export const projects = [
             "MongoDB",
             "Node",
             "TailwindCSS",
-            "React"
-        ]
-    },
-    {
-        name: "Cocktails Hub ",
-        url: "cocktails-hub.netlify.app",
-        img: Cocktails,
-        desc: "A database for varieties of wines and cocktails",
-        tools: [
-            "HTML",
-            "Node",
-            "Tailwind",
             "React"
         ]
     },
