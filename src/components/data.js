@@ -20,7 +20,7 @@ export const projects = [
     },
     {
         name: "Task Processor",
-        url: "www.github.com/marakanz",
+        url: "https://github.com/Marakanz/Real-Time-Distributed-Task-Processing-System",
         desc: "Designed and developed a scalable distributed task processing system demonstrating enterprise-level software engineering practices, handling real-time data processing with fault tolerance and modern API design pattern",
         tools: [
             "Fast API",
