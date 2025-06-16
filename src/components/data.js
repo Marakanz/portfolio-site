@@ -19,32 +19,16 @@ export const projects = [
         ]
     },
     {
-        name: "Jobs-to-do",
-        url: "jobstodo.netlify.app",
-        img: JOBS,
-        desc: "A job application monitoring portal where users can keep track of their past and ongoing job applications",
+        name: "Task Processor",
+        url: "www.github.com/marakanz",
+        desc: "Designed and developed a scalable distributed task processing system demonstrating enterprise-level software engineering practices, handling real-time data processing with fault tolerance and modern API design pattern",
         tools: [
-        
-            "Node",
-            "TailwindCSS",
-            "React",
-            "Redux"
-        ]
+            "Fast API",
+            "Redis",
+            "Docker",
+            "Celery",
+            "Grafana",
+            "PostgreSQL"
+        ],
     },
-    {
-        name: "MM's Catering",
-        url: "www.mmscatering.com",
-        img: MMS,
-        desc: "A Food Catering website where users can place orders and book catering service for events.",
-        tools: [
-            "Heroku",
-            "Express",
-            "MongoDB",
-            "Node",
-            "TailwindCSS",
-            "React"
-        ]
-    },
-    
-    
 ]
